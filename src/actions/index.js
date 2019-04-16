@@ -17,6 +17,6 @@ export const fetchCharacters = () => dispatch => {
         .get(
             "https://swapi.co/api/people/"
         )
-        .then(res => dispatch({ type: FETCH_SUCCESS, payload: res }))
+        .then(res => dispatch({ type: FETCH_SUCCESS, payload: res.data.results }))
         .catch(err => dispatch({ type: FETCH_FAIL, payload: err }))
 }

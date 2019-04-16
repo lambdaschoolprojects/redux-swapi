@@ -7,6 +7,7 @@ import {applyMiddleware, createStore} from "redux";
 import rootReducer from "./reducers";
 import thunk from 'redux-thunk';
 import logger from 'redux-logger';
+
 // needed dependancies
 // applyMiddleware from redux
 // thunk from redux-thunk
